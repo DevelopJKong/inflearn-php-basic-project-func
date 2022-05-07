@@ -1,9 +1,10 @@
+
 <?php
 
-set_error_handler(function($errno,$errstr,$errfile,$errline) {
-    $errmsg = "[{$errno}] {$errstr} in {$errfile} on line {$errline}";
-    error_log($errmsg .PHP_EOL,3, config('error.path'));
+/**
+ * Error
+ */
 
-    return error_log($errmsg);
+set_error_handler(function ($errno, $errstr, $errfile, $errline) {
+    return error_log("[{$errno}] {$errstr} in {$errfile} on line {$errline}" . PHP_EOL, 3, config('error.path'));
 });
-

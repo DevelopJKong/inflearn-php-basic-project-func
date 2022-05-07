@@ -9,7 +9,6 @@ output_add_rewrite_var('token', $_SESSION['CSRF_TOKEN']);
 //output_add_rewrite_var('token',$_SESSION['CSRF_TOKEN']);
 ?>
 
-<?php require_once dirname(__DIR__) . '/layouts/top.php'; ?>
 <div id="main__form-post">
     <form action="/post/write_process.php" method="post">
         <input type="text" name="title" placeholder="Type a post title" class="uk-input uk-article-title"/>
@@ -22,4 +21,3 @@ output_add_rewrite_var('token', $_SESSION['CSRF_TOKEN']);
     </form>
 </div>
 
-<?php require_once dirname(__DIR__) . '/layouts/bottom.php'; ?>
