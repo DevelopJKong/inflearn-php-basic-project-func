@@ -2,36 +2,36 @@
 
 function create()
 {
-    return views('post', ['requestUrl' => '/post/wrtie']);
+    return views('post', ['requestUrl' => '/post/write']);
 }
 
 function store()
 {
     return base(function ($_, $args) {
-        $args = [
-            'id' => user()['id'],
-            'title' => $args['title'],
-            'content' => $args['content'],
-            'created_at' => date('Y-m-d H:i:s', time()),
-        ];
-        return createPost(...array_values($args)) && redirect('/');
+        return createPost(
+            $_SESSION['user']['id'],
+            $args['title'],
+            $args['content'],
+            date('Y-m-d H:i:s', time())
+        ) && redirect('/');
     });
 }
 
 function edit($id)
 {
     return base(function ($post) {
-        return owner($id) && views('post', array_merge($post, [
+        return owner($post['id']) && views('post', array_merge($post, [
             'requestUrl' => '/post/update?id=' . $post['id'],
         ]));
     }, $id);
 }
-
 function update($id)
 {
     return base(function ($post, $args) {
-        $args = array_merge($args, ['id' => $post['id']]);
-        return owner($post['id']) && updatePost(...array_values($args)) && redirect("/post/read?id=" . $post['id']);
+        return owner($post['id']) &&
+        updatePost($post['id'], ...array_values($args)) &&
+        redirect('/post/read?id=' . $post['id'])
+        ;
     }, $id);
 }
 
@@ -45,8 +45,10 @@ function destroy($id)
 function show($id)
 {
     return base(function ($post) {
-        ['username' => $username] = selectOne('users', $post['user_id']);
-        return views('read', array_merge($post, compact('username')));
+        return views('read', array_merge(
+            $post,
+            first("SELECT username FROM users WHERE id = ?", $post['user_id'])
+        ));
     }, $id);
 }
 
@@ -57,7 +59,7 @@ function base($callback, $id = null)
         'content' => FILTER_DEFAULT,
     ]);
     if ($id) {
-        $post = selectOne('posts', filter_var($id), FILTER_VALIDATE_INT);
+        $post = first("SELECT * FROM posts WHERE id = ?", filter_var($id, FILTER_VALIDATE_INT));
         if (empty($post)) {
             return reject(404);
         }

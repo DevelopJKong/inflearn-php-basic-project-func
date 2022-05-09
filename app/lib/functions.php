@@ -1,14 +1,7 @@
 <?php
 
-function user()
-{
-    if ($user = $_SESSION['user']) {
-        return $userId == $user['id'];
-    }
-    return false;
-}
 
-function views($view, $vars = [])
+function views($views, $vars = [])
 {
     foreach ($vars as $name => $value) {
         $$name = $value;
@@ -16,20 +9,23 @@ function views($view, $vars = [])
     return require_once dirname(__DIR__, 2) . '/resources/views/layouts/app.php';
 }
 
+
 function owner($id)
 {
-    ['user_id' => $userId] = first("SELECT * FROM posts WHERE id = ?", $id);
+    [ 'user_id' => $userId ] = first("SELECT * FROM posts WHERE id = ?", $id);
     if ($user = $_SESSION['user']) {
         return $userId == $user['id'];
     }
     return false;
 }
 
+
 function redirect($url)
 {
     header("Location: {$url}");
     return http_response_code() == 302;
 }
+
 
 function reject($message = null)
 {
@@ -44,6 +40,7 @@ function reject($message = null)
     }
 }
 
+
 function matchs($path, $method = null)
 {
     $is = ($_SERVER['PATH_INFO'] ?? '/') == $path;
@@ -53,9 +50,10 @@ function matchs($path, $method = null)
     return $is;
 }
 
+
 function verify($guards)
 {
-    foreach ($guards as [$path, $method]) {
+    foreach ($guards as [ $path, $method ]) {
         if (matchs($path, $method)) {
             $token = array_key_exists('token', $_REQUEST) ? filter_var($_REQUEST['token'], FILTER_SANITIZE_STRING) : null;
             if (hash_equals($token, $_SESSION['CSRF_TOKEN'])) {
@@ -67,6 +65,7 @@ function verify($guards)
     return true;
 }
 
+
 function guard($guards)
 {
     foreach ($guards as $path) {
@@ -77,6 +76,7 @@ function guard($guards)
     return true;
 }
 
+
 function requires($requires)
 {
     if (count($requires) == count(array_filter($requires))) {
@@ -85,10 +85,11 @@ function requires($requires)
     return false;
 }
 
+
 function routes($routes)
 {
-    foreach ($routes as [$path, $method, $callbackString]) {
-        [$file, $callback] = explode('.', $callbackString);
+    foreach ($routes as [ $path, $method, $callbackString ]) {
+        [ $file, $callback ] = explode('.', $callbackString);
         if (matchs($path, $method)) {
             require_once dirname(__DIR__, 2) . "/app/controllers/{$file}.php";
             call_user_func($callback, ...array_values($_GET));
@@ -97,6 +98,7 @@ function routes($routes)
     }
     return false;
 }
+
 
 function config($configString)
 {

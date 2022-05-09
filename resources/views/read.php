@@ -10,11 +10,10 @@
             <span class="owner">
                 <a href="/post/delete?id=<?=$id?>&token=<?=$_SESSION['CSRF_TOKEN']?>" class="uk-link-text"
                     id="delete">Delete</a>
-                <a href="/post/update?id=<?=$id?>" class="uk-link-text" id="update">Update</a>
+                <a href="/post/update?id=<?=$id?>" class="uk-link-text" id="delete">Update</a>
             </span>
             <?php endif;?>
         </div>
         <div class="uk-text-lead uk-margin-bottom"><?=$content?></div>
     </article>
-
 </div>

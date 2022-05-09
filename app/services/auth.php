@@ -1,8 +1,7 @@
 <?php
-
 function signIn($email, $password)
 {
-    if ($user = first('SELECT * FROM users WHERE email =?', $email)) {
+    if ($user = first('SELECT * FROM users WHERE email = ? LIMIT 1', $email)) {
         if (password_verify($password, $user['password'])) {
             return $_SESSION['user'] = $user;
         }

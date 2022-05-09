@@ -34,7 +34,7 @@
             </div>
         </nav>
         <main id="main" role="main">
-            <?php require_once dirname(__DIR__) . '/' . $view . '.php'?>
+            <?php require_once dirname(__DIR__) . '/' . $views . '.php'?>
         </main>
     </div> <!-- #app -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>

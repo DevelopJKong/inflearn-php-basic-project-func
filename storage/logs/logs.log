@@ -36,3 +36,14 @@
 [2] Undefined variable $userId in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 6
 [2] Trying to access array offset on value of type bool in C:\xampp\htdocs\infPhpBoard_Fun\app\controllers\user.php on line 23
 [2] Undefined array key "NULL" in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\database.php on line 54
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 60
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 58
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 58
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 58
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\controllers\user.php on line 56
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 58
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 58
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 58
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\controllers\user.php on line 56
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 58
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 58

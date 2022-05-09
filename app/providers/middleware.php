@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Middlewares
- */
-
 $middlewares = [
     'auth',
     'csrfToken',

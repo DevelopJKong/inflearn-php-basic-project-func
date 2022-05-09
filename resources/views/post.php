@@ -1,9 +1,9 @@
 <div id="main__form-post">
     <form action="<?=$requestUrl?>" method="post">
-        <input type="hidden" name="token" value="<?=$_SESSION['CSRF_TOKEN']?>" />
-        <input type="text" value="<?=$title ?? ''?>" name="title" placeholder="Type a post title"
-            class="uk-input uk-article-title" />
-        <hr />
+        <input type="hidden" name="token" value="<?=$_SESSION['CSRF_TOKEN']?>">
+        <input type="text" name="title" value="<?=$title ?? ''?>" placeholder="Type a post title"
+            class="uk-input uk-article-title">
+        <hr>
         <div class="editor uk-align-center">
             <textarea name="content"></textarea>
             <div id="editor"><?=$content ?? ''?></div>

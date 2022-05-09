@@ -1,6 +1,5 @@
 <div id="main__index" class="uk-container">
     <ul class="uk-list">
-        <!--여기서 $posts가 하나도 없으면 안되는식 같아 보인다 -->
         <?php foreach ($posts as $post): ?>
         <li>
             <article class="uk-article">
