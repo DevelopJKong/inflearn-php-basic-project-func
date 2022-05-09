@@ -5,7 +5,7 @@
  */
 
 $routes = [];
-foreach ([ 'web' ] as $route) {
+foreach (['web'] as $route) {
     $routes = array_merge(require_once dirname(__DIR__, 2) . "/routes/{$route}.php", $routes);
 }
 

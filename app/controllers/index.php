@@ -2,8 +2,7 @@
 
 function index($page = 0)
 {
-    $posts = rows('SELECT * FROM posts ORDER BY id DESC LIMIT 3 OFFSET '.$page *3);
-    return views('index',[
-        'posts'=> transform($posts) ?: []
+    return views('index', [
+        'posts' => getPosts(filter_var($page, FILTER_VALIDATE_INT), 3),
     ]);
 }

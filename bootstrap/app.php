@@ -2,7 +2,8 @@
 
 assert_options(ASSERT_BAIL, true);
 
-foreach ([ 'lib' ] as $dir) {
+//정확히 무슨 코드인지 모르겠다
+foreach (['lib', 'services'] as $dir) {
     $includePath = dirname(__DIR__) . "/app/{$dir}/";
     foreach (scandir($includePath) as $file) {
         if (fnmatch('*.php', $file)) {
@@ -10,13 +11,13 @@ foreach ([ 'lib' ] as $dir) {
         }
     }
 }
-$providers = [
+$provders = [
     'error',
     'database',
     'session',
     'middleware',
-    'route'
+    'route',
 ];
-foreach ($providers as $file) {
+foreach ($provders as $file) {
     assert(require_once dirname(__DIR__) . "/app/providers/{$file}.php");
 }

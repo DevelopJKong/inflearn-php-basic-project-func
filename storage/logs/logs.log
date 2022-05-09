@@ -1,3 +1,38 @@
-[2] Undefined global variable $DB_CONNECTION in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\database.php on line 97
-[2] Undefined variable $posts in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 3
 [2] foreach() argument must be of type array|object, null given in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 3
+[2] foreach() argument must be of type array|object, null given in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 3
+[2] foreach() argument must be of type array|object, null given in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 4
+[2] foreach() argument must be of type array|object, null given in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 4
+[2] foreach() argument must be of type array|object, null given in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 4
+[2] foreach() argument must be of type array|object, null given in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 4
+[2] foreach() argument must be of type array|object, null given in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 4
+[2] foreach() argument must be of type array|object, null given in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 4
+[2] foreach() argument must be of type array|object, null given in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 4
+[2] foreach() argument must be of type array|object, null given in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 4
+[2] foreach() argument must be of type array|object, null given in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 4
+[2] foreach() argument must be of type array|object, null given in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 4
+[2] foreach() argument must be of type array|object, null given in C:\xampp\htdocs\infPhpBoard_Fun\resources\views\index.php on line 4
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 52
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 52
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 60
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 60
+[2] Undefined variable $userId in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 6
+[2] Trying to access array offset on value of type bool in C:\xampp\htdocs\infPhpBoard_Fun\app\controllers\user.php on line 17
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 60
+[2] Undefined variable $userId in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 6
+[2] Trying to access array offset on value of type bool in C:\xampp\htdocs\infPhpBoard_Fun\app\controllers\user.php on line 17
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 60
+[2] Undefined variable $userId in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 6
+[2] Trying to access array offset on value of type bool in C:\xampp\htdocs\infPhpBoard_Fun\app\controllers\user.php on line 23
+[2] Undefined array key "NULL" in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\database.php on line 54
+[2] Undefined variable $userId in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 6
+[2] Trying to access array offset on value of type bool in C:\xampp\htdocs\infPhpBoard_Fun\app\controllers\user.php on line 17
+[2] Undefined variable $userId in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 6
+[2] Trying to access array offset on value of type bool in C:\xampp\htdocs\infPhpBoard_Fun\app\controllers\user.php on line 17
+[2] Undefined variable $userId in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 6
+[2] Trying to access array offset on value of type bool in C:\xampp\htdocs\infPhpBoard_Fun\app\controllers\user.php on line 17
+[2] Undefined variable $userId in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 6
+[2] Trying to access array offset on value of type bool in C:\xampp\htdocs\infPhpBoard_Fun\app\controllers\user.php on line 17
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 60
+[2] Undefined variable $userId in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 6
+[2] Trying to access array offset on value of type bool in C:\xampp\htdocs\infPhpBoard_Fun\app\controllers\user.php on line 23
+[2] Undefined array key "NULL" in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\database.php on line 54

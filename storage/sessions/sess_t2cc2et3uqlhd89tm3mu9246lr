@@ -1,1 +1,1 @@
-CSRF_TOKEN|s:64:"d8b036b5d0a2b625f295be7d4a3122944ba13bd22e57002f409f264882b3d5b9";
+CSRF_TOKEN|s:64:"2a1894cd95746c89b0dc0add3986b6f52e728c39c091e48fcbaa1e034089b59a";user|a:4:{s:2:"id";i:4;s:5:"email";s:15:"jeong@naver.com";s:8:"password";s:60:"$2y$10$VgjnBFWDqLD4X7uxQx5t1.HMMHXHYVXjaeJUZjjhZtt.E/MEDpO5i";s:8:"username";s:5:"jeong";}

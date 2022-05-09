@@ -1,25 +1,10 @@
 <?php
 
-/**
- * Connect to MySQL database
- *
- * @param string $hostname
- * @param string $username
- * @param string $password
- * @param string $database
- *
- * @return object
- */
 function connect($hostname, $username, $password, $database)
 {
     return $GLOBALS['DB_CONNECTION'] = mysqli_connect($hostname, $username, $password, $database);
 }
 
-/**
- * Close MySQL database
- *
- * @return bool
- */
 function close()
 {
     if (array_key_exists('DB_CONNECTION', $GLOBALS) && $GLOBALS['DB_CONNECTION']) {
@@ -28,15 +13,6 @@ function close()
     return false;
 }
 
-/**
- * get First
- *
- * @param object $conn
- * @param string $query
- * @param array $params
- *
- * @return mixed
- */
 function first($query, ...$params)
 {
     return raw($query, $params, function ($result) {
@@ -49,15 +25,6 @@ function first($query, ...$params)
     });
 }
 
-/**
- * get Rows
- *
- * @param object $conn
- * @param string $query
- * @param array $params
- *
- * @return array
- */
 function rows($query, ...$params)
 {
     return raw($query, $params, function ($result) {
@@ -69,37 +36,19 @@ function rows($query, ...$params)
     });
 }
 
-/**
- * Execute a query
- *
- * @param object $conn
- * @param string $query
- * @param array $params
- *
- * @return bool
- */
 function execute($query, ...$params)
 {
     return raw($query, $params);
 }
 
-/**
- * Execute query raw
- *
- * @param string $query
- * @param string array
- * @param callback $callback
- *
- * @return mixed
- */
 function raw($query, $params = [], $callback = null)
 {
     if ($stmt = mysqli_prepare($GLOBALS['DB_CONNECTION'], $query)) {
         if (count($params) > 0) {
             $mappings = [
-                'integer'   => 'i',
-                'string'    => 's',
-                'double'    => 'd'
+                'integer' => 'i',
+                'string' => 's',
+                'double' => 'd',
             ];
             $bs = array_reduce($params, function ($bs, $arg) use ($mappings) {
                 return $bs .= $mappings[gettype($arg)];
