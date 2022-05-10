@@ -1,28 +1,25 @@
 <?php
 
+//작동
 function showLoginForm()
 {
     return views('auth', [
-        'requestUrl' => '/auth/login'
+        'requestUrl' => '/auth/login',
     ]);
 }
 
-/**
- * Create a User Session (POST)
- */
+//작동
 function login()
 {
     $args = filter_input_array(INPUT_POST, [
-        'email'     => FILTER_VALIDATE_EMAIL | FILTER_SANITIZE_EMAIL,
-        'password'  => FILTER_DEFAULT
+        'email' => FILTER_VALIDATE_EMAIL | FILTER_SANITIZE_EMAIL,
+        'password' => FILTER_DEFAULT,
     ]);
 
     return signIn(...array_values($args)) ? redirect('/') : reject();
 }
 
-/**
- * Delete a User Session (POST)
- */
+//작동
 function logout()
 {
     return signOut() ? redirect('/') : reject();

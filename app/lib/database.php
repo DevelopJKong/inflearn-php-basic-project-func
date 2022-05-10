@@ -53,7 +53,6 @@ function raw($query, $params = [], $callback = null)
             $bs = array_reduce($params, function ($bs, $arg) use ($mappings) {
                 return $bs .= $mappings[gettype($arg)];
             });
-
             mysqli_stmt_bind_param($stmt, $bs, ...array_values($params));
         }
         if ($res = mysqli_stmt_execute($stmt)) {

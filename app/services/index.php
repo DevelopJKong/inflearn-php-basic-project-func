@@ -2,7 +2,7 @@
 function getPosts($page, $count)
 {
     return array_map(function ($post) {
-        ['username' => $username] = first('SELECT username FROM users', $post['user_id']);
+        ['username' => $username] = first('SELECT username FROM users WHERE id = ?', $post['user_id']);
         $content = filter_var(
             mb_substr(strip_tags($post['content']), 0, 200),
             FILTER_SANITIZE_FULL_SPECIAL_CHARS);
