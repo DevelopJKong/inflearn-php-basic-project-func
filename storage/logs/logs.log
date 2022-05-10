@@ -53,3 +53,22 @@
 [8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 58
 [8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 58
 [8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 58
+[2] Undefined variable $partParts in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[2] Trying to access array offset on value of type null in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[8192] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[2] Undefined variable $partParts in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[2] Trying to access array offset on value of type null in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[8192] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[2] Undefined variable $partParts in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[2] Trying to access array offset on value of type null in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[8192] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[2] Undefined variable $partParts in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[2] Trying to access array offset on value of type null in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[8192] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[2] Undefined variable $partParts in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[2] Trying to access array offset on value of type null in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[8192] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[2] Undefined variable $partParts in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[2] Trying to access array offset on value of type null in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[8192] strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\services\image.php on line 5
+[8192] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\infPhpBoard_Fun\app\lib\functions.php on line 58
